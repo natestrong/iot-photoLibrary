@@ -12,3 +12,5 @@ services:
         build: ./py-photoLibrary
         ports:
             - "5000:5000"
+        volumes:
+            - "/photos:/mnt/md0/share/photos"
