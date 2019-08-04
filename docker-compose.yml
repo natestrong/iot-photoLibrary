@@ -1,9 +1,14 @@
 version: "3"
+
 services:
-    webapp:
-        build:
-            context: ./ng-photoLibrary
-        ports: 
-            - "8080:80"
-        volumes:
-            - /googleCredentials:/googleCredentials
+#    webapp:
+#        build: ./ng-photoLibrary
+#        ports: 
+#            - "8080:80"
+#        volumes:
+#            - /googleCredentials:/googleCredentials
+
+    pyapp:
+        build: ./py-photoLibrary
+        ports:
+            - "8080:5000"
