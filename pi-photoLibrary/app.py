@@ -19,8 +19,8 @@ def checkPostedData(postedData, requiredFields):
     for field in requiredFields:
         if field not in postedData:
             return {'code': 301, 'message': f'Field named {field} not found in post.'}
-        else:
-            return {'code': 200}
+
+    return {'code': 200}
 
 
 class AddPhoto(Resource):
@@ -49,7 +49,34 @@ class AddPhoto(Resource):
         return jsonify(retMap)
 
 
+class GetPhotos(Resource):
+    def get(self):
+        postedData = request.get_json()
+        requiredFields = []
+        statusDict = checkPostedData(postedData, requiredFields)
+        if (statusDict['code'] != 200):
+            retJson = {
+                "Message": statusDict['message'],
+                "Status Code": str(statusDict['code'])
+            }
+            return jsonify(retJson)
+
+        collection_ref = db.collection(u'photos')
+        photos = collection_ref.stream()
+
+        photosFound = []
+        for photo in photos:
+            photosFound.append(photo.to_dict())
+
+        retMap = {
+            'Message': photosFound,
+            'Status Code': 200
+        }
+        return jsonify(retMap)
+
+
 api.add_resource(AddPhoto, "/addPhoto")
+api.add_resource(GetPhotos, "/getPhotos")
 
 
 @app.route('/')
