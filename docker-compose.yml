@@ -9,7 +9,7 @@ services:
 #            - /googleCredentials:/googleCredentials
 
     pyapp:
-        build: ./py-photoLibrary
+        build: ./pi-photoLibrary
         ports:
             - "5000:5000"
         volumes:

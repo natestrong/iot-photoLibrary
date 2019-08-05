@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/ng-photoLibrary/dist" />
       <excludeFolder url="file://$MODULE_DIR$/ng-photoLibrary/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/pi-photoLibrary/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/pi_photoLibrary" />
+      <excludeFolder url="file://$MODULE_DIR$/py-photoLibrary/venv" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,3 +1,0 @@
-Flask
-flask_restful
-firebase-admin
