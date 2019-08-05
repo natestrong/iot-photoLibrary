@@ -164,4 +164,4 @@ if __name__ == "__main__":
     if platform.system() == "Windows":
         app.run(debug=True)
     else:
-        app.run(localhost='0.0.0.0')
+        app.run(host='0.0.0.0')
