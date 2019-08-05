@@ -14,3 +14,4 @@ services:
             - "5000:5000"
         volumes:
             - "/photos:/mnt/md0/share/photos"
+            - "/googleCredentials:/googleCredentials"

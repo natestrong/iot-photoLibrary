@@ -1,9 +1,22 @@
+import os
+
 from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
+
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
 
 
 app = Flask(__name__)
 api = Api(app)
+
+# Use a service account
+pathToGoogleCredentials = os.path.join('googleCredentials', 'naughtyphotonapi-107e15665ffa.json')
+cred = credentials.Certificate(pathToGoogleCredentials)
+firebase_admin.initialize_app(cred)
+
+db = firestore.client()
 
 
 def checkPostedData(postedData, functionName):
@@ -19,6 +32,14 @@ def checkPostedData(postedData, functionName):
             return 302
         else:
             return 200
+
+class GetImages(Resource):
+    def post(self):
+        users_ref = db.collection(u'photos')
+        docs = users_ref.stream()
+
+        for doc in docs:
+            print(u'{} => {}'.format(doc.id, doc.to_dict()))
 
 class Add(Resource):
     def post(self):
