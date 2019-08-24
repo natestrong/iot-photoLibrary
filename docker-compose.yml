@@ -15,3 +15,8 @@ services:
         volumes:
             - "/photos:/mnt/md0/share/photos"
             - "/googleCredentials:/googleCredentials"
+        links:
+            - db
+
+    db:
+        build: ./db

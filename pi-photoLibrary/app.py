@@ -15,7 +15,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 
-def checkPostedData(postedData, requiredFields):
+def check_posted_data(postedData, requiredFields):
     for field in requiredFields:
         if field not in postedData:
             return {'code': 301, 'message': f'Field named {field} not found in post.'}
@@ -24,55 +24,56 @@ def checkPostedData(postedData, requiredFields):
 
 
 class AddPhoto(Resource):
-    def post(self):
-        postedData = request.get_json()
-        requiredFields = ['photoName']
-        statusDict = checkPostedData(postedData, requiredFields)
-        if (statusDict['code'] != 200):
-            retJson = {
-                "Message": statusDict['message'],
-                "Status Code": str(statusDict['code'])
+    @staticmethod
+    def post():
+        posted_data = request.get_json()
+        required_fields = ['photoName']
+        status_dict = check_posted_data(posted_data, required_fields)
+        if status_dict['code'] != 200:
+            ret_json = {
+                "Message": status_dict['message'],
+                "Status Code": str(status_dict['code'])
             }
-            return jsonify(retJson)
+            return jsonify(ret_json)
 
-        nameOfPhoto = postedData["photoName"]
+        name_of_photo = posted_data["photoName"]
 
-        doc_ref = db.collection(u'photos').document(nameOfPhoto)
+        doc_ref = db.collection(u'photos').document(name_of_photo)
         doc_ref.set({
-            u'pathToFile': f'/photos/{nameOfPhoto}.jpg',
+            u'pathToFile': f'/photos/{name_of_photo}.jpg',
         })
 
-        retMap = {
+        ret_map = {
             'Message': 'cool',
             'Status Code': 200
         }
-        return jsonify(retMap)
+        return jsonify(ret_map)
 
 
 class GetPhotos(Resource):
     def get(self):
-        postedData = request.get_json()
-        requiredFields = []
-        statusDict = checkPostedData(postedData, requiredFields)
-        if (statusDict['code'] != 200):
-            retJson = {
-                "Message": statusDict['message'],
-                "Status Code": str(statusDict['code'])
+        posted_data = request.get_json()
+        required_fields = []
+        status_dict = check_posted_data(posted_data, required_fields)
+        if status_dict['code'] != 200:
+            ret_json = {
+                "Message": status_dict['message'],
+                "Status Code": str(status_dict['code'])
             }
-            return jsonify(retJson)
+            return jsonify(ret_json)
 
         collection_ref = db.collection(u'photos')
         photos = collection_ref.stream()
 
-        photosFound = []
+        photos_found = []
         for photo in photos:
-            photosFound.append(photo.to_dict())
+            photos_found.append(photo.to_dict())
 
-        retMap = {
-            'Message': photosFound,
+        ret_map = {
+            'Message': photos_found,
             'Status Code': 200
         }
-        return jsonify(retMap)
+        return jsonify(ret_map)
 
 
 api.add_resource(AddPhoto, "/addPhoto")
