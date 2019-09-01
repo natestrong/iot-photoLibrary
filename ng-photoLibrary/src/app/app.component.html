@@ -1,24 +1,5 @@
-<h1 style="font-family: 'Lacquer', sans-serif;">
-  PHOTOBASE
-</h1>
-
-<h3>My fancy Photo Library</h3>
-
-<button mat-raised-button
-        color="primary">
-  My button
-</button>
-
-<button mat-icon-button
-        color="accent">
-  <mat-icon>star</mat-icon>
-</button>
-
-<br>
-<br>
-
-<img style="width: 500px; object-fit: contain"
-     alt="pic"
-     src="https://the18.com/sites/default/files/styles/feature_image_with_focal/public/feature-images/20170912-The18-Photo-Lionel-Messi-Goal-Juventus-Gianluigi-Buffon.png?itok=kmP6EpN5">
-
-<router-outlet></router-outlet>
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.photo_id}}
+  </li>
+</ul>

@@ -5,7 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-
+    apiKey: "AIzaSyAo4Xqz4eb-u9_MRG80HX2izbNafNwcgLo",
+    authDomain: "iot-photolibrary-dbd95.firebaseapp.com",
+    databaseURL: "https://iot-photolibrary-dbd95.firebaseio.com",
+    projectId: "iot-photolibrary-dbd95",
+    storageBucket: "",
+    messagingSenderId: "26490137919",
+    appId: "1:26490137919:web:9e9fcb81eea254f3"
   }
 };
 
