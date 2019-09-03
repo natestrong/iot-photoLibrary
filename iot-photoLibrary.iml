@@ -18,4 +18,10 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Python 3.7 (iot-photoLibrary-venv) interpreter library" level="application" />
   </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="C:\Users\NateDawg\Desktop\iot-photoLibrary\pi-photoLibrary\requirements.txt" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
 </module>

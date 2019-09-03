@@ -4,12 +4,14 @@ import platform
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 from flask_restful import Api, Resource
+from flask_cors import CORS
 from models.photo import Photo
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 cred = credentials.Certificate('/googleCredentials/googleCredentials.json')
 firebase_admin.initialize_app(cred)
@@ -25,46 +27,14 @@ def check_posted_data(posted_data, required_fields):
     return {'code': 200}
 
 
-class AddPhoto(Resource):
-    @staticmethod
-    def post():
-        posted_data = request.get_json()
-        required_fields = ['photoName']
-        status_dict = check_posted_data(posted_data, required_fields)
-        if status_dict['code'] != 200:
-            ret_json = {
-                "Message": status_dict['message'],
-                "Status Code": str(status_dict['code'])
-            }
-            return jsonify(ret_json)
-
-        name_of_photo = posted_data["photoName"]
-
-        doc_ref = db.collection(u'photos').document(name_of_photo)
-        doc_ref.set({
-            u'pathToFile': f'/photos/{name_of_photo}.jpg',
-        })
-
-        ret_map = {
-            'Message': 'cool',
-            'Status Code': 200
-        }
-        return jsonify(ret_map)
-
-
-class GetPhotos(Resource):
+class CurrentSessionCount(Resource):
     def get(self):
         photos = os.listdir('/CF/DCIM/100EOS5D/')
 
-        # collection_ref = db.collection(u'photos')
-        # photos = collection_ref.stream()
-        #
-        # photos_found = []
-        # for photo in photos:
-        #     photos_found.append(photo.to_dict())
+        photos_count = len(photos)
 
         ret_map = {
-            'Message': photos,
+            'Message': photos_count,
             'Status Code': 200
         }
         return jsonify(ret_map)
@@ -94,14 +64,13 @@ class InitializeSession(Resource):
         return jsonify(ret_map)
 
 
-api.add_resource(AddPhoto, "/addPhoto")
-api.add_resource(GetPhotos, "/getPhotos")
+api.add_resource(CurrentSessionCount, "/currentSessionCount")
 api.add_resource(InitializeSession, "/initializeSession")
 
 
 @app.route('/')
 def hello_world():
-    return "Hello World!"
+    return "Hello World! Sent from Python!"
 
 
 if __name__ == "__main__":
