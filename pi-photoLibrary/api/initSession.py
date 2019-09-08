@@ -28,9 +28,10 @@ class InitializeSession(Resource):
 
     def post(self):
         posted_data = request.get_json()
+        print(posted_data)
 
         total_deleted = None
-        if posted_data['deleteFirst'] == 'true':
+        if posted_data['deleteFirst']:
             print('Deleting existing collection:')
             total_deleted = self.fs_photos.delete_collection()
             print(f'Deleted: {total_deleted}')

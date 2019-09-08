@@ -11,12 +11,16 @@ import {AngularFirestoreModule} from "@angular/fire/firestore";
 import {AngularFireAuthModule} from "@angular/fire/auth";
 import {AngularFireStorageModule} from "@angular/fire/storage";
 import {HttpClientModule} from "@angular/common/http";
-import { PhotoCardComponent } from './components/photo-card/photo-card.component';
+import {PhotoCardComponent} from './components/photo-card/photo-card.component';
+import {MatProgressButtonsModule} from "mat-progress-buttons";
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { PhotoCardListComponent } from './components/photo-card-list/photo-card-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhotoCardComponent
+    PhotoCardComponent,
+    PhotoCardListComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +34,10 @@ import { PhotoCardComponent } from './components/photo-card/photo-card.component
     AngularFireAuthModule,
     AngularFireStorageModule,
     HttpClientModule,
+    MatProgressButtonsModule.forRoot(),
+    FlexLayoutModule
   ],
-  providers: [
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

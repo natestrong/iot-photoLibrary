@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Photo} from "../../../models/photo";
-import {DomSanitizer} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-photo-card',
@@ -11,20 +10,20 @@ export class PhotoCardComponent implements OnInit {
   @Input()
   photo: Photo
 
-  thumbnail: any
+  thumbnail: string
 
-  constructor(private sanitizer: DomSanitizer) {
+  constructor() {
   }
 
   ngOnInit() {
-    if (this.thumbnail) {
+    if (this.photo.thumbnail_blob) {
       this.getThumbnail()
     }
   }
 
   getThumbnail() {
-    let photoInBase64 = this.convertToBase64(this.photo.thumbnail)
-    this.thumbnail = this.sanitizer.bypassSecurityTrustResourceUrl('data:image/jpeg;base64,' + photoInBase64)
+    let photoInBase64 = this.convertToBase64(this.photo.thumbnail_blob)
+    this.thumbnail = 'data:image/jpeg;base64,' + photoInBase64
   }
 
   convertToBase64(blob) {

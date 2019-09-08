@@ -1,9 +1,15 @@
-<button mat-raised-button (click)="onButton()">Push me pls..</button>
+<div fxLayout="row" fxLayoutGap="20px">
+  <mat-spinner-button
+    [options]="refreshButtonOptions"
+    (btnClick)=onRefresh(false)>
+  </mat-spinner-button>
+
+  <mat-spinner-button
+    [options]="hardRefreshButtonOptions"
+    (btnClick)=onRefresh(true)>
+  </mat-spinner-button>
+</div>
+
 <h2>Message: {{this.helloMessage}}</h2>
 
-<ul>
-  <li class="text" *ngFor="let photo of photos | async">
-    <app-photo-card [photo]="photo"></app-photo-card>
-  </li>
-
-</ul>
+<app-photo-card-list></app-photo-card-list>

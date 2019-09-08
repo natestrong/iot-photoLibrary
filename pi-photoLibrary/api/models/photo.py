@@ -1,4 +1,3 @@
-import base64
 import os
 
 import imageio as imageio
@@ -20,19 +19,19 @@ class Photo:
     def generate_photo_id(self):
         return f'{self.date}_{os.path.splitext(self.name)[0]}'
 
-    def create_thumbnail(self, size=150):
-        self.filepath_jpeg = f'/photos/jpegs/{self.photo_id}.jpg'
+    def create_thumbnail(self, size=300):
+        self.filepath_jpeg = f'/photos/jpegs/{self.photo_id}.jpeg'
 
         if not os.path.exists(self.filepath_jpeg):
             raw = rawpy.imread(self.filepath_raw)
             rgb = raw.postprocess()
-            imageio.imsave(f'/photos/jpegs/{self.photo_id}.jpg', rgb)
+            imageio.imsave(f'/photos/jpegs/{self.photo_id}.jpeg', rgb)
 
-        self.filepath_thumbnail = f'/photos/thumbnails/{self.photo_id}.jpg'
+        self.filepath_thumbnail = f'/photos/thumbnails/{self.photo_id}.jpeg'
         if not os.path.exists(self.filepath_thumbnail):
             image = Image.open(self.filepath_jpeg)
             image.thumbnail((size, size))
             image.save(self.filepath_thumbnail, 'JPEG')
 
         with open(self.filepath_thumbnail, "rb") as imageFile:
-            self.thumbnail_blob = base64.b64encode(imageFile.read())
+            self.thumbnail_blob = imageFile.read()

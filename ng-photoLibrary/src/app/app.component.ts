@@ -1,9 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {AngularFirestore} from '@angular/fire/firestore';
-import {Observable} from 'rxjs';
 import {PhotoService} from "./photo.service";
-import {map} from "rxjs/operators";
-import {Photo} from "../models/photo";
+import {MatProgressButtonOptions} from "mat-progress-buttons";
 
 @Component({
   selector: 'app-root',
@@ -11,37 +8,63 @@ import {Photo} from "../models/photo";
   styleUrls: ['style/_style.scss']
 })
 export class AppComponent implements OnInit {
-  photos: Observable<Photo[]>;
-  currentSessionCount: number = null
   helloMessage: string = ''
 
-  constructor(db: AngularFirestore, private photoService: PhotoService) {
-    this.photos = db.collection('currentSession')
-      .snapshotChanges()
-      .pipe(map(docArray => {
-        return docArray.map(doc => {
-          return {
-            photo_id: doc.payload.doc.id,
-            name: doc.payload.doc.data()['name'],
-            date: doc.payload.doc.data()['date'],
-            thumbnail: doc.payload.doc.data()['thumbnail'],
-            path: doc.payload.doc.data()['filepath_raw'],
-            jpeg_filepath: doc.payload.doc.data()['filepath_jpeg'],
-            thumbnail_filepath: doc.payload.doc.data()['filepath_thumbnail']
-          }
-        })
-      }))
+  refreshButtonOptions: MatProgressButtonOptions = {
+    active: false,
+    text: 'Refresh',
+    spinnerSize: 18,
+    raised: true,
+    fab: true,
+    stroked: false,
+    buttonColor: 'primary',
+    spinnerColor: 'accent',
+    fullWidth: false,
+    disabled: false,
+    mode: 'indeterminate',
+    icon: 'refresh'
+  }
+
+  hardRefreshButtonOptions: MatProgressButtonOptions = {
+    active: false,
+    text: 'Hard Refresh',
+    buttonColor: 'accent',
+    barColor: 'primary',
+    raised: true,
+    stroked: false,
+    mode: 'indeterminate',
+    value: 0,
+    disabled: false,
+    fullWidth: false
+  }
+
+
+  constructor(private photoService: PhotoService) {
   }
 
   ngOnInit(): void {
+    this.onRefresh(false)
+    this.hardRefreshButtonOptions.active = true;
   }
 
-  public onButton() {
-    console.log('pushed')
-    this.photoService.piCommandHandler('initializeSession')
+  public onRefresh(deleteFirst) {
+    console.log('Refreshing')
+
+    if (deleteFirst) {
+      this.hardRefreshButtonOptions.active = true;
+    } else {
+      this.refreshButtonOptions.active = true;
+    }
+
+    this.photoService.piCommandHandler(
+      'initializeSession',
+      'post',
+      {'deleteFirst': deleteFirst})
       .subscribe(data => {
-          this.currentSessionCount = data['Message']
+          this.helloMessage = data['Message']
           console.log(data)
+          this.refreshButtonOptions.active = false;
+          this.hardRefreshButtonOptions.active = false;
         }
       )
   }
