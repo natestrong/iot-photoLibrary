@@ -25,9 +25,9 @@ export class AppComponent implements OnInit {
             name: doc.payload.doc.data()['name'],
             date: doc.payload.doc.data()['date'],
             thumbnail: doc.payload.doc.data()['thumbnail'],
-            path: doc.payload.doc.data()['path'],
-            jpeg_filepath: doc.payload.doc.data()['jpeg_filepath'],
-            thumbnail_filepath: doc.payload.doc.data()['thumbnail_filepath']
+            path: doc.payload.doc.data()['filepath_raw'],
+            jpeg_filepath: doc.payload.doc.data()['filepath_jpeg'],
+            thumbnail_filepath: doc.payload.doc.data()['filepath_thumbnail']
           }
         })
       }))
