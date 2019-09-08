@@ -115,6 +115,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-photoLibrary"
+    }
+  },
+  "defaultProject": "ng-photoLibrary",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

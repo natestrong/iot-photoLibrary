@@ -11,10 +11,12 @@ import {AngularFirestoreModule} from "@angular/fire/firestore";
 import {AngularFireAuthModule} from "@angular/fire/auth";
 import {AngularFireStorageModule} from "@angular/fire/storage";
 import {HttpClientModule} from "@angular/common/http";
+import { PhotoCardComponent } from './components/photo-card/photo-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhotoCardComponent
   ],
   imports: [
     BrowserModule,

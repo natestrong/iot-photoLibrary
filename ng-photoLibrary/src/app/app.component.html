@@ -1,9 +1,9 @@
-<h1>{{helloMessage}}</h1>
 <button mat-raised-button (click)="onButton()">Push me pls..</button>
-<h2>Photo Count {{this.currentSessionCount}}</h2>
+<h2>Message: {{this.helloMessage}}</h2>
 
 <ul>
-  <li class="text" *ngFor="let item of items | async">
-    {{item.photo_id}}
+  <li class="text" *ngFor="let photo of photos | async">
+    <app-photo-card [photo]="photo"></app-photo-card>
   </li>
+
 </ul>

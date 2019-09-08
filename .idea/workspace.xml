@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b957b8f2-0dc2-49a9-9122-197be48baacf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lookup.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-photoLibrary/src/app/style/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ng-photoLibrary/src/models/photo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iot-photoLibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iot-photoLibrary.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-photoLibrary/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ng-photoLibrary/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ng-photoLibrary/src/app/style/_style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.spec.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ng-photoLibrary/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ng-photoLibrary/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pi-photoLibrary/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/pi-photoLibrary/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi-photoLibrary/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi-photoLibrary/models/photo.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pi-photoLibrary/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pi-photoLibrary/requirements.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,34 +32,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pi-photoLibrary/app.py">
+        <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/photo.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+            <state relative-caret-position="612">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -62,20 +52,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="357">
+              <caret line="21" column="4" selection-start-line="2" selection-start-column="55" selection-end-line="34" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pi-photoLibrary/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -86,6 +79,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -98,6 +92,13 @@
       <find>db</find>
       <find>phot</find>
       <find>PhotoService</find>
+      <find>photo</find>
+      <find>comman</find>
+      <find>spli</find>
+      <find>tslint</find>
+      <find>css</find>
+      <find>App re</find>
+      <find>auth</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -119,7 +120,6 @@
         <option value="$PROJECT_DIR$/pi-photoLibrary/Dockerfile" />
         <option value="$PROJECT_DIR$/db/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/pi-photoLibrary/models/photo.py" />
         <option value="$PROJECT_DIR$/pi-photoLibrary/__init__.py" />
         <option value="$PROJECT_DIR$/pi-photoLibrary/__main__.py" />
         <option value="$PROJECT_DIR$/pi-photoLibrary/src/app.py" />
@@ -129,12 +129,28 @@
         <option value="$PROJECT_DIR$/ng-photoLibrary/src/environments/environment.ts" />
         <option value="$PROJECT_DIR$/pi-photoLibrary/commands/intializeSession.py" />
         <option value="$PROJECT_DIR$/pi-photoLibrary/intializeSession.py" />
-        <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/pi-photoLibrary/requirements.txt" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/commands/deleteCollection.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/models/photo.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/commands/InitializeSession.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/commands/initializeSession.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/commands/intializeFS.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/commands/initFS.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/commands/initSession.py" />
         <option value="$PROJECT_DIR$/pi-photoLibrary/app.py" />
-        <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/api/deleteCollection.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/api/models/FSCollection.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/api/models/fscollection.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/requirements.txt" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/api/initSession.py" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/api/models/photo.py" />
+        <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.scss" />
         <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/photo.service.ts" />
+        <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ng-photoLibrary/src/models/photo.ts" />
+        <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.html" />
+        <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.ts" />
       </list>
     </option>
   </component>
@@ -152,7 +168,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,12 +178,76 @@
             <path>
               <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
               <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-photoLibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="photo-card" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="ng-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
               <item name="pi-photoLibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="pi-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iot-photoLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iot-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="pi-photoLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,25 +256,30 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7 (iot-photoLibrary-venv)" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pi-photoLibrary/requirements.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ng-photoLibrary/src/app" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.12817681" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\NateDawg\Desktop\iot-photoLibrary\ng-photoLibrary\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\pi-photoLibrary" />
-      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\pi-photoLibrary\models" />
-      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\pi-photoLibrary\src" />
-      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\db" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\ng-photoLibrary\src\app" />
       <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\pi-photoLibrary" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\ng-photoLibrary\src\app" />
+      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\ng-photoLibrary\src\app\components\style" />
+      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\ng-photoLibrary\src\app\components" />
+      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\pi-photoLibrary\api\models" />
+      <recent name="C:\Users\NateDawg\Desktop\iot-photoLibrary\pi-photoLibrary\commands" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -315,6 +399,7 @@
       <workItem from="1567479675967" duration="1501000" />
       <workItem from="1567483912539" duration="3673000" />
       <workItem from="1567487721384" duration="371000" />
+      <workItem from="1567877347531" duration="27024000" />
     </task>
     <task id="LOCAL-00001" summary="checkin 2 testing">
       <created>1564874825651</created>
@@ -404,7 +489,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50263000" />
+    <option name="totallyTimeSpent" value="77287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1223" y="0" width="1344" height="1407" extended-state="0" />
@@ -420,15 +505,15 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20879121" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49844238" visible="true" weight="0.29827315" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49922118" weight="0.20879121" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6580997" visible="true" weight="0.29827315" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3288854" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.71884733" weight="0.3288854" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50155765" side_tool="true" visible="true" weight="0.29827315" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.34190032" side_tool="true" visible="true" weight="0.29827315" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.20784314" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.25353217" />
@@ -441,7 +526,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="SciView" order="9" />
+      <window_info anchor="right" id="SciView" order="9" weight="0.32943925" />
       <window_info anchor="right" id="Mongo Explorer" order="10" />
     </layout>
   </component>
@@ -475,15 +560,10 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="self.provide_automatic_options" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/iot_photoLibrary$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1567487820818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pi-photoLibrary" />
-    <SUITE FILE_PATH="coverage/iot_photoLibrary$app.coverage" NAME="app Coverage Results" MODIFIED="1567487805380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pi-photoLibrary" />
+    <SUITE FILE_PATH="coverage/iot_photoLibrary$app.coverage" NAME="app Coverage Results" MODIFIED="1567908805741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pi-photoLibrary" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ng-photoLibrary/package.json">
@@ -532,17 +612,8 @@
     <entry file="file://$PROJECT_DIR$/pi-photoLibrary/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pi-photoLibrary/__main__.py" />
-    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/models/__init__.py">
+    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/api/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-photoLibrary/pi-photoLibrary.iml">
@@ -559,23 +630,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/core/auth.service.ts" />
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/material.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/googleCredentials/googleCredentials.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -594,34 +648,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-photoLibrary/intializeSession.py" />
-    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/photo.service.spec.ts" />
-    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lookup.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -635,46 +662,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/api/initFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../iot-photoLibrary-venv/Lib/site-packages/ffmpeg/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-photoLibrary/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/photo.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pi-photoLibrary/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="55" />
+        <state relative-caret-position="234">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/api/models/fscollection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/api/initSession.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/material.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/style/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/style/_style.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/api/models/photo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/photo.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/models/photo.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        <state relative-caret-position="612">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="4" selection-start-line="2" selection-start-column="55" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
