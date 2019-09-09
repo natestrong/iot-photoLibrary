@@ -29,7 +29,6 @@ RUN apt-get -y update && \
         pkg-config \
         libatlas-base-dev \
         gfortran \
-        libjasper-dev \
         libgtk2.0-dev \
         libavcodec-dev \
         libavformat-dev \
@@ -37,7 +36,6 @@ RUN apt-get -y update && \
         libjpeg-dev \
         libpng-dev \
         libtiff-dev \
-        libjasper-dev \
         libv4l-dev \
     && \
 
