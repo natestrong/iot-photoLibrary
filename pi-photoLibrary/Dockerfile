@@ -12,7 +12,7 @@ FROM ubuntu
 WORKDIR /usr/src/app
 COPY requirements.txt .
 
-#RUN apt update
+RUN apt update
 RUN apt install python3-pip -y
 RUN apt install software-properties-common -y
 RUN add-apt-repository ppa:deadsnakes/ppa -y
