@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b957b8f2-0dc2-49a9-9122-197be48baacf" name="Default Changelist" comment="">
+    <list default="true" id="b957b8f2-0dc2-49a9-9122-197be48baacf" name="Default Changelist" comment="testing ffmpeg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pi-photoLibrary/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/pi-photoLibrary/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pi-photoLibrary/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pi-photoLibrary/requirements.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/ng-photoLibrary/dist/" />
@@ -99,20 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pi-photoLibrary/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pi-photoLibrary/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -209,8 +207,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/ng-photoLibrary/src/app/components/photo-card/photo-card.component.scss" />
-        <option value="$PROJECT_DIR$/pi-photoLibrary/Dockerfile" />
         <option value="$PROJECT_DIR$/pi-photoLibrary/requirements.txt" />
+        <option value="$PROJECT_DIR$/pi-photoLibrary/Dockerfile" />
       </list>
     </option>
   </component>
@@ -397,7 +395,7 @@
       <workItem from="1567483912539" duration="3673000" />
       <workItem from="1567487721384" duration="371000" />
       <workItem from="1567877347531" duration="27401000" />
-      <workItem from="1567959892483" duration="15887000" />
+      <workItem from="1567959892483" duration="19315000" />
     </task>
     <task id="LOCAL-00001" summary="checkin 2 testing">
       <created>1564874825651</created>
@@ -518,17 +516,94 @@
       <option name="project" value="LOCAL" />
       <updated>1567984914057</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="tring to get rawpy working">
+      <created>1567985454881</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1567985454881</updated>
+    </task>
+    <task id="LOCAL-00019" summary="docker now installs libraw">
+      <created>1567987461067</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1567987461068</updated>
+    </task>
+    <task id="LOCAL-00020" summary="docker now installs libraw">
+      <created>1567987554166</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1567987554166</updated>
+    </task>
+    <task id="LOCAL-00021" summary="docker now installs libraw">
+      <created>1567988250197</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1567988250197</updated>
+    </task>
+    <task id="LOCAL-00022" summary="docker now installs libraw">
+      <created>1567988416619</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1567988416619</updated>
+    </task>
+    <task id="LOCAL-00023" summary="docker now installs libraw">
+      <created>1567988505906</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1567988505906</updated>
+    </task>
+    <task id="LOCAL-00024" summary="docker now installs libraw">
+      <created>1567988599368</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1567988599368</updated>
+    </task>
+    <task id="LOCAL-00025" summary="testing ffmpeg">
+      <created>1567990100135</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1567990100135</updated>
+    </task>
+    <task id="LOCAL-00026" summary="testing ffmpeg">
+      <created>1567990574706</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1567990574706</updated>
+    </task>
+    <task id="LOCAL-00027" summary="testing ffmpeg">
+      <created>1567990715743</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1567990715743</updated>
+    </task>
+    <task id="LOCAL-00028" summary="testing ffmpeg">
+      <created>1567990772743</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1567990772743</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93551000" />
+    <option name="totallyTimeSpent" value="96979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1223" y="0" width="1344" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19158879" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19158879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -544,7 +619,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" sideWeight="0.49688473" weight="0.32967034" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.70950156" visible="true" weight="0.3288854" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.70950156" visible="true" weight="0.3288854" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.29049844" side_tool="true" visible="true" weight="0.3288854" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -585,7 +660,10 @@
     <MESSAGE value="refactor photo model&#10;now initSession script checks if photo needs updating, much faster&#10;&#10;Just realized that a bunch of files wern't added to git.  Added them" />
     <MESSAGE value="fixed  bunch of stuff" />
     <MESSAGE value="updates docker-compose to mount CF" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates docker-compose to mount CF" />
+    <MESSAGE value="tring to get rawpy working" />
+    <MESSAGE value="docker now installs libraw" />
+    <MESSAGE value="testing ffmpeg" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing ffmpeg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -904,17 +982,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/pi-photoLibrary/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

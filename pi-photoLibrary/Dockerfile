@@ -14,7 +14,7 @@ COPY requirements.txt .
 #RUN make -j 6
 #RUN make install
 
-RUN pip install rawpy --no-binary rawpy
+#RUN pip install rawpy --no-binary rawpy
 
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
