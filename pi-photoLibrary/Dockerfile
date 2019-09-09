@@ -5,14 +5,13 @@ COPY requirements.txt .
 RUN pip install numpy
 
 # libraw ########
-RUN
-    cd /tmp/deps && \
-    curl -X GET https://www.libraw.org/data/LibRaw-0.19.0.tar.gz > libraw.tar.gz && \
-    tar -zxf libraw.tar.gz && \
-    cd LibRaw-0.19.0/ && \
-    ./configure && \
-    make -j 6 && \
-    make install && \
+RUN cd /tmp/deps
+RUN curl -X GET https://www.libraw.org/data/LibRaw-0.19.0.tar.gz > libraw.tar.gz
+RUN tar -zxf libraw.tar.gz
+RUN cd LibRaw-0.19.0/
+RUN ./configure
+RUN make -j 6
+RUN make install
 
 RUN pip install rawpy --no-binary rawpy
 
