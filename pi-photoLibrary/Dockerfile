@@ -12,7 +12,6 @@ FROM python:3
 WORKDIR /usr/src/app
 COPY requirements.txt .
 
-RUN apt-get install exiftool -y
 RUN apt-get install python3-pil -y
 RUN apt-get install ffmpeg -y
 
