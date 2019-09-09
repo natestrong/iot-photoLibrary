@@ -1,20 +1,18 @@
-FROM jrottenberg/ffmpeg
+FROM python:3
 WORKDIR /usr/src/app
 COPY requirements.txt .
 
-RUN apt install python3.7
-
-
 RUN pip install numpy
 
-#RUN git init
-#RUN git clone https://github.com/LibRaw/LibRaw.git libraw
-#RUN git clone https://github.com/LibRaw/LibRaw-cmake.git libraw-cmake
-#RUN cd libraw
-#RUN git checkout 0.19.0
-#RUN cp -R ../libraw-cmake/* .
-#RUN cmake .
-#RUN sudo make install
+# libraw ########
+RUN
+    cd /tmp/deps && \
+    curl -X GET https://www.libraw.org/data/LibRaw-0.19.0.tar.gz > libraw.tar.gz && \
+    tar -zxf libraw.tar.gz && \
+    cd LibRaw-0.19.0/ && \
+    ./configure && \
+    make -j 6 && \
+    make install && \
 
 RUN pip install rawpy --no-binary rawpy
 
