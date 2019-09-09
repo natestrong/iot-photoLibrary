@@ -4,3 +4,4 @@ firebase-admin
 flask-cors
 PyExifTool
 Pillow
+imagio
