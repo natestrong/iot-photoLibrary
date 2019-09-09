@@ -2,8 +2,6 @@ FROM python:3
 WORKDIR /usr/src/app
 COPY requirements.txt .
 
-RUN pip install git
-
 RUN pip install numpy
 
 RUN git clone https://github.com/LibRaw/LibRaw.git libraw

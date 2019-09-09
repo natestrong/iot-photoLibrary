@@ -4,4 +4,3 @@ firebase-admin
 pymongo
 flask-cors
 Pillow
-rawpy
