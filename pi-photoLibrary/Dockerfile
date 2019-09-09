@@ -14,9 +14,9 @@ COPY requirements.txt .
 
 RUN apt update
 RUN apt install python3-pip -y
-RUN apt install software-properties-common
-RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt install python3.7
+RUN apt install software-properties-common -y
+RUN add-apt-repository ppa:deadsnakes/ppa -y
+RUN apt install python3.7 -y
 
 RUN pip3 install numpy
 RUN pip3 install rawpy
