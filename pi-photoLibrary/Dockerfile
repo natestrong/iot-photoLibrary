@@ -4,6 +4,7 @@ COPY requirements.txt .
 
 RUN pip install numpy
 
+RUN git init
 RUN git clone https://github.com/LibRaw/LibRaw.git libraw
 RUN git clone https://github.com/LibRaw/LibRaw-cmake.git libraw-cmake
 RUN cd libraw
