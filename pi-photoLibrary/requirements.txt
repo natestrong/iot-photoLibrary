@@ -1,7 +1,7 @@
-numpy
 Flask
 flask_restful
 firebase-admin
 pymongo
 flask-cors
 PyExifTool
+Pillow

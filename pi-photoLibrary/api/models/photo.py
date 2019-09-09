@@ -1,7 +1,6 @@
 import os
 
 import imageio as imageio
-import rawpy
 from PIL import Image
 
 
@@ -22,10 +21,13 @@ class Photo:
     def create_thumbnail(self, size=300):
         self.filepath_jpeg = f'/photos/jpegs/{self.photo_id}.jpeg'
 
+        # todo - switch to use exiftool (these images already exist..)
+
         if not os.path.exists(self.filepath_jpeg):
-            raw = rawpy.imread(self.filepath_raw)
-            rgb = raw.postprocess()
-            imageio.imsave(f'/photos/jpegs/{self.photo_id}.jpeg', rgb)
+            pass
+            # raw = rawpy.imread(self.filepath_raw)
+            # rgb = raw.postprocess()
+            # imageio.imsave(f'/photos/jpegs/{self.photo_id}.jpeg', rgb)
 
         self.filepath_thumbnail = f'/photos/thumbnails/{self.photo_id}.jpeg'
         if not os.path.exists(self.filepath_thumbnail):
