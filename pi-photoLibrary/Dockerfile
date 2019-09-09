@@ -13,7 +13,7 @@ WORKDIR /usr/src/app
 COPY requirements.txt .
 
 RUN apt update
-RUN apt install python3-pip
+RUN apt install python3-pip -y
 RUN apt install software-properties-common
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt install python3.7
